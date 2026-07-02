@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, Code2, Calendar, Instagram, Linkedin, Twitter } from 'lucide-react';
 import Button from './Button';
-import logo from '../assets/logo_without_bg.png';
+import logo from '../assets/logo.png';
 
 
 export default function Navigation() {
@@ -40,11 +40,15 @@ export default function Navigation() {
             >
                 {/* Logo */}
                 <a href="#" className="flex items-center gap-2 group">
-                    <img
-                        src={logo}
-                        alt="TriVerge Logo"
-                        className="w-12 h-12 object-contain brightness-110 group-hover:scale-105 transition-transform duration-300"
-                    />
+                    <div className="p-1.5 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center shadow-[0_4px_20px_rgba(0,0,0,0.2)]">
+
+                        <img
+                            src={logo}
+                            alt="TriVerge Logo"
+                            className="w-12 h-12 object-contain brightness-110 group-hover:scale-105 transition-transform duration-300 rounded-xl border border-white/20 shadow-sm"
+                        />
+                    </div>
+
                 </a>
 
                 {/* Desktop Navigation Links */}
