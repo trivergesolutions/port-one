@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       {showSplash ? (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#072460] to-[#010614]">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#0c368d] to-[#030c22]">
 
           <div className="w-full max-w-3xl px-4 ">
             <video

@@ -42,28 +42,32 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="py-32 bg-[#F9F6F0]" id="services">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <section className="relative overflow-clip py-32 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#0c368d] to-[#030c22]" id="services">
+      {/* Soft ambient light source anchoring the sticky sidebar */}
+      <div className="absolute top-1/4 left-0 w-[500px] h-[500px] bg-cyan-500/5 rounded-full filter blur-[150px] pointer-events-none -translate-x-1/3"></div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Responsive Grid Split */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-8 items-start">
 
-          {/* LEFT SIDE: Sticky Header */}
+          {/* LEFT SIDE: Sticky Header (Now sticks perfectly again) */}
           <div className="lg:col-span-5 lg:sticky lg:top-32 self-start space-y-6">
-            <div className="inline-flex items-center gap-2 bg-white/60 border border-slate-200/40 px-3 py-1 rounded-full backdrop-blur-sm">
-              <span className="w-1.5 h-1.5 rounded-full bg-slate-900"></span>
-              <span className="text-[10px] font-bold tracking-widest uppercase text-slate-500">
+            <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 px-3 py-1 rounded-full backdrop-blur-sm">
+              <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse shadow-[0_0_8px_#ffffff]"></span>
+              <span className="text-[10px] font-bold tracking-widest uppercase text-white/90">
                 Capabilities
               </span>
             </div>
 
-            <h2 className="text-4xl sm:text-6xl font-black text-slate-950 tracking-tight uppercase leading-[0.95]">
+            <h2 className="text-4xl sm:text-6xl font-black text-white tracking-tight uppercase leading-[0.95]">
               What <br className="hidden lg:block" /> We Do
             </h2>
 
             {/* Clean geometric line separator */}
-            <div className="w-12 h-[1px] bg-slate-950/20 my-6"></div>
+            <div className="w-12 h-[1px] bg-white/30 my-6"></div>
 
-            <p className="text-lg text-slate-600 max-w-md leading-relaxed font-normal tracking-wide">
+            <p className="text-lg text-blue-100/80 max-w-md leading-relaxed font-normal tracking-wide">
               Comprehensive engineering models and development services tailored to scale your production ecosystem from concept to reality.
             </p>
           </div>
@@ -75,19 +79,19 @@ export default function Services() {
               return (
                 <div
                   key={index}
-                  className="group bg-white rounded-3xl p-8 border border-slate-200/40 shadow-[0_4px_30px_rgba(0,0,0,0.01)] hover:shadow-[0_10px_40px_rgba(0,0,0,0.03)] transition-all duration-300 flex flex-col sm:flex-row gap-6 items-start"
+                  className="group bg-[#030c22]/40 rounded-3xl p-8 border border-white/10 shadow-[0_12px_40px_rgba(0,0,0,0.15)] hover:border-cyan-500/30 hover:bg-[#030c22]/70 transition-all duration-300 flex flex-col sm:flex-row gap-6 items-start backdrop-blur-sm"
                 >
-                  {/* Premium Minimal Icon Frame */}
-                  <div className="w-14 h-14 rounded-2xl bg-slate-50 border border-slate-200/60 flex items-center justify-center shrink-0 group-hover:bg-slate-950 group-hover:border-slate-950 transition-all duration-300">
-                    <Icon className="w-6 h-6 text-slate-800 group-hover:text-white transition-colors duration-300" />
+                  {/* Premium Tech Icon Frame */}
+                  <div className="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0 group-hover:bg-cyan-500 group-hover:border-cyan-400 group-hover:shadow-[0_0_20px_rgba(6,182,212,0.4)] transition-all duration-300">
+                    <Icon className="w-6 h-6 text-slate-300 group-hover:text-white transition-colors duration-300" />
                   </div>
 
                   {/* Content Block */}
                   <div className="space-y-2">
-                    <h3 className="text-2xl font-bold text-slate-950 tracking-tight">
+                    <h3 className="text-2xl font-bold text-white tracking-tight transition-colors duration-300 group-hover:text-cyan-400">
                       {service.title}
                     </h3>
-                    <p className="text-slate-600 leading-relaxed font-normal text-base">
+                    <p className="text-slate-300 leading-relaxed font-normal text-base">
                       {service.description}
                     </p>
                   </div>
@@ -99,5 +103,7 @@ export default function Services() {
         </div>
       </div>
     </section>
+
+
   );
 }

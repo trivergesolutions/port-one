@@ -5,63 +5,69 @@ import heroBg from '../assets/hero-bg.jpg';
 
 export default function Hero() {
     return (
-        <section className="relative min-h-screen flex items-center justify-center bg-[#F9F6F0] overflow-hidden pt-20">
+        <section className="relative min-h-screen flex items-center justify-center bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#0c368d] to-[#030c22] overflow-hidden pt-20">
             {/* Subtle Premium Background Texture */}
             <div
-                className="absolute inset-0 bg-cover bg-center bg-no-repeat mix-blend-luminosity opacity-10"
+                className="absolute inset-0 bg-cover bg-center bg-no-repeat mix-blend-screen opacity-[0.03]"
                 style={{ backgroundImage: `url(${heroBg})` }}
             ></div>
 
-            {/* Soft, Elegant Vignette вместо ярких цветных блогов */}
-            <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-amber-200/10 rounded-full filter blur-[120px] pointer-events-none"></div>
+            {/* Soft, Elegant Metallic Blue/Cyan Glow */}
+            <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-cyan-500/10 rounded-full filter blur-[150px] pointer-events-none"></div>
 
             <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center flex flex-col items-center">
 
-                {/* Minimal Editorial Badge */}
-                <div className="inline-flex items-center gap-2 bg-white border border-slate-200/60 px-4 py-1.5 rounded-full shadow-[0_2px_12px_rgba(0,0,0,0.02)] mb-10 transition-transform hover:scale-[1.02] duration-300">
-                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-                    <span className="text-xs font-semibold tracking-widest uppercase text-slate-500">
+                {/* Tech Cyber Badge */}
+                <div className="inline-flex items-center gap-2 bg-[#020a1c]/80 border border-cyan-500/30 px-4 py-1.5 rounded-full shadow-[0_0_20px_rgba(6,182,212,0.15)] mb-10 transition-all hover:scale-[1.02] hover:border-cyan-400 duration-300">
+                    <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse shadow-[0_0_8px_#22d3ee]"></span>
+                    <span className="text-xs font-semibold tracking-widest uppercase text-cyan-400/90">
                         Available for Q3 2026 Projects
                     </span>
                 </div>
 
-                {/* Editorial Typography */}
-                <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black text-slate-950 mb-8 tracking-tight leading-[0.95] uppercase">
+                {/* Sci-Fi Editorial Typography */}
+                <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black text-white mb-8 tracking-tight leading-[0.95] uppercase">
                     Building Scalable
-                    <span className="block mt-1 text-slate-900 font-light italic normal-case tracking-normal py-1">
+                    <span className="block mt-1 text-cyan-400 font-light italic normal-case tracking-normal py-1 drop-shadow-[0_0_15px_rgba(34,211,238,0.3)]">
                         Web & Mobile Products
                     </span>
-                    <span className="block mt-1">
+                    <span className="block mt-1 text-slate-200">
                         That Grow Businesses
                     </span>
                 </h1>
 
-                {/* Refined Divider */}
-                <div className="w-12 h-[1px] bg-slate-900/20 mb-8"></div>
+                {/* Refined Dark-Themed Divider */}
+                <div className="w-12 h-[1px] bg-gradient-to-r from-transparent via-cyan-500/50 to-transparent mb-8"></div>
 
-                {/* Subtitle with better breathing room */}
-                {/* <p className="text-lg sm:text-xl text-slate-600 mb-14 max-w-2xl mx-auto leading-relaxed font-normal tracking-wide">
-                    A full-stack engineering partner specializing in React, .NET, Laravel, and native mobile apps. We take exceptional digital experiences <span className="text-slate-900 font-medium">from concept to production.</span>
-                </p> */}
+                {/* Subtitle with High-Contrast Text */}
+                {/* 
+    <p className="text-lg sm:text-xl text-slate-400 mb-14 max-w-2xl mx-auto leading-relaxed font-normal tracking-wide">
+      A full-stack engineering partner specializing in React, .NET, Laravel, and native mobile apps. We take exceptional digital experiences 
+      <span className="text-cyan-400 font-medium"> from concept to production.</span>
+    </p> 
+    */}
 
-                {/* Premium High-Contrast Dual Actions */}
-                {/* <div className="flex flex-col sm:flex-row gap-4 items-center justify-center w-full sm:w-auto">
-                    <a
-                        href="#contact"
-                        className="w-full sm:w-auto px-8 py-4 bg-slate-950 hover:bg-slate-900 text-white rounded-2xl font-medium tracking-wide shadow-lg hover:shadow-xl active:scale-[0.99] transition-all duration-200 text-center"
-                    >
-                        Start a Project
-                    </a>
-                    <a
-                        href="#works"
-                        className="w-full sm:w-auto px-8 py-4 bg-white/80 hover:bg-white border border-slate-200/80 text-slate-800 rounded-2xl font-medium tracking-wide backdrop-blur-sm active:scale-[0.99] transition-all duration-200 text-center"
-                    >
-                        View Portfolio
-                    </a>
-                </div> */}
+                {/* Premium Sci-Fi High-Contrast Dual Actions */}
+                {/* 
+    <div className="flex flex-col sm:flex-row gap-4 items-center justify-center w-full sm:w-auto">
+      <a 
+        href="#contact" 
+        className="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white rounded-2xl font-medium tracking-wide shadow-[0_0_25px_rgba(6,182,212,0.3)] hover:shadow-[0_0_35px_rgba(6,182,212,0.5)] active:scale-[0.99] transition-all duration-200 text-center"
+      >
+        Start a Project
+      </a>
+      <a 
+        href="#works" 
+        className="w-full sm:w-auto px-8 py-4 bg-white/5 hover:bg-white/10 border border-slate-700 text-slate-200 rounded-2xl font-medium tracking-wide backdrop-blur-sm active:scale-[0.99] transition-all duration-200 text-center"
+      >
+        View Portfolio
+      </a>
+    </div> 
+    */}
 
             </div>
         </section>
+
     );
     return (
         <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 via-blue-50 to-cyan-50 overflow-hidden">

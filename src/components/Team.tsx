@@ -53,28 +53,31 @@ export default function Team() {
   };
 
   return (
-    <section className="py-32 bg-[#F9F6F0]" id="team">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-32 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#0c368d] to-[#030c22]" id="team">
+      {/* Ambient cyan glow behind the scrolling team cards */}
+      <div className="absolute top-1/3 right-0 w-[500px] h-[500px] bg-cyan-500/5 rounded-full filter blur-[150px] pointer-events-none"></div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
         {/* Split Grid Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-8 items-start">
 
           {/* LEFT COLUMN: Sticky Section Meta */}
           <div className="lg:col-span-4 lg:sticky lg:top-32 self-start space-y-6">
-            <div className="inline-flex items-center gap-2 bg-white/60 border border-slate-200/40 px-3 py-1 rounded-full backdrop-blur-sm">
-              <span className="w-1.5 h-1.5 rounded-full bg-slate-900"></span>
-              <span className="text-[10px] font-bold tracking-widest uppercase text-slate-500">
+            <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 px-3 py-1 rounded-full backdrop-blur-sm">
+              <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse shadow-[0_0_8px_#ffffff]"></span>
+              <span className="text-[10px] font-bold tracking-widest uppercase text-white/90">
                 Execution Force
               </span>
             </div>
 
-            <h2 className="text-4xl sm:text-6xl font-black text-slate-950 tracking-tight uppercase leading-[0.95]">
+            <h2 className="text-4xl sm:text-6xl font-black text-white tracking-tight uppercase leading-[0.95]">
               Meet Our <br /> Core Team
             </h2>
 
-            <div className="w-12 h-[1px] bg-slate-950/20 my-6"></div>
+            <div className="w-12 h-[1px] bg-white/30 my-6"></div>
 
-            <p className="text-lg text-slate-600 max-w-sm leading-relaxed font-normal tracking-wide">
+            <p className="text-lg text-blue-100/80 max-w-sm leading-relaxed font-normal tracking-wide">
               A high-precision, senior-level engineering group structured to execute mission-critical applications without layers of management friction.
             </p>
           </div>
@@ -94,16 +97,16 @@ export default function Team() {
                   <motion.div
                     key={index}
                     variants={cardVariants}
-                    className="group relative bg-white rounded-3xl p-8 sm:p-10 border border-slate-200/40 shadow-[0_4px_30px_rgba(0,0,0,0.01)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.03)] transition-all duration-500"
+                    className="group relative bg-[#030c22]/40 rounded-3xl p-8 sm:p-10 border border-white/10 shadow-[0_12px_40px_rgba(0,0,0,0.15)] hover:border-cyan-500/30 hover:bg-[#030c22]/60 transition-all duration-500 backdrop-blur-sm"
                   >
                     {/* Top Identity bar */}
-                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 pb-6 border-b border-slate-100">
+                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 pb-6 border-b border-white/10">
                       <div className="flex items-center gap-4">
-                        <div className="w-12 h-12 rounded-xl bg-slate-50 border border-slate-200/60 flex items-center justify-center shrink-0 group-hover:bg-slate-950 group-hover:border-slate-950 transition-colors duration-300">
-                          <Icon className="w-5 h-5 text-slate-700 group-hover:text-white transition-colors duration-300" />
+                        <div className="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0 group-hover:bg-cyan-500 group-hover:border-cyan-400 group-hover:shadow-[0_0_20px_rgba(6,182,212,0.3)] transition-all duration-300">
+                          <Icon className="w-5 h-5 text-slate-300 group-hover:text-white transition-colors duration-300" />
                         </div>
                         <div>
-                          <h3 className="text-xl font-bold text-slate-950 tracking-tight leading-snug">
+                          <h3 className="text-xl font-bold text-white tracking-tight leading-snug group-hover:text-cyan-400 transition-colors duration-300">
                             {member.role}
                           </h3>
                           <p className="text-xs font-semibold uppercase tracking-wider text-slate-400 mt-0.5">
@@ -114,7 +117,7 @@ export default function Team() {
                     </div>
 
                     {/* Architectural Role Bio */}
-                    <p className="text-slate-600 text-base leading-relaxed mb-8">
+                    <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-8">
                       {member.bio}
                     </p>
 
@@ -127,9 +130,9 @@ export default function Team() {
                         {member.capabilities.map((cap, idx) => (
                           <div
                             key={idx}
-                            className="bg-slate-50/50 border border-slate-200/40 rounded-xl p-3 text-xs font-semibold text-slate-800 flex items-center gap-2 group-hover:bg-white group-hover:border-slate-300 transition-colors duration-300"
+                            className="bg-white/5 border border-white/10 rounded-xl p-3 text-xs font-semibold text-slate-200 flex items-center gap-2 hover:border-cyan-500/30 hover:bg-[#0c368d]/20 transition-all duration-300 cursor-default"
                           >
-                            <span className="w-1.5 h-1.5 rounded-full bg-slate-950 shrink-0"></span>
+                            <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 shadow-[0_0_6px_#22d3ee] shrink-0"></span>
                             {cap}
                           </div>
                         ))}
@@ -141,7 +144,7 @@ export default function Team() {
                       {member.tech.map((tag, techIndex) => (
                         <span
                           key={techIndex}
-                          className="text-[10px] font-bold uppercase tracking-wide text-slate-500 bg-slate-100/60 px-2.5 py-1 rounded-md"
+                          className="text-[10px] font-bold uppercase tracking-wide text-slate-300 bg-white/5 border border-white/10 px-2.5 py-1 rounded-md hover:border-cyan-500/20 transition-colors duration-300"
                         >
                           {tag}
                         </span>
@@ -157,11 +160,11 @@ export default function Team() {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.6, duration: 0.8 }}
-              className="mt-8 bg-slate-950 rounded-3xl p-8 text-white relative overflow-hidden"
+              className="mt-8 bg-[#030c22]/80 border border-cyan-500/20 rounded-3xl p-8 text-white relative overflow-hidden shadow-[0_12px_40px_rgba(0,0,0,0.3)] backdrop-blur-md"
             >
-              <div className="absolute -top-24 -left-24 w-72 h-72 bg-blue-500/10 rounded-full filter blur-[80px] pointer-events-none"></div>
-              <p className="text-sm sm:text-base text-slate-300 leading-relaxed font-normal">
-                <span className="text-white font-bold uppercase tracking-wider text-[11px] block mb-1.5 text-blue-400">
+              <div className="absolute -top-24 -left-24 w-72 h-72 bg-cyan-500/10 rounded-full filter blur-[80px] pointer-events-none"></div>
+              <p className="text-sm sm:text-base text-slate-300 leading-relaxed font-normal relative z-10">
+                <span className="text-cyan-400 font-bold uppercase tracking-wider text-[11px] block mb-1.5 drop-shadow-[0_0_8px_rgba(34,211,238,0.3)]">
                   Our Delivery Approach
                 </span>
                 We completely reject unnecessary corporate layers, account manager games, and artificial communication telephone loops. You work directly alongside senior builders executing at peak velocity to deploy architecture that holds structural permanence.
@@ -173,5 +176,6 @@ export default function Team() {
 
       </div>
     </section>
+
   );
 }
