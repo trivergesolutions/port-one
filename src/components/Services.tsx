@@ -61,7 +61,7 @@ export default function Services() {
             </div>
 
             <h2 className="text-4xl sm:text-6xl font-black text-white tracking-tight uppercase leading-[0.95]">
-              What <br className="hidden lg:block" /> We Do
+              What <br className="hidden lg:block" /> We Do?
             </h2>
 
             {/* Clean geometric line separator */}

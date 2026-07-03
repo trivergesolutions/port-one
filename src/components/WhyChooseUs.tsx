@@ -81,7 +81,7 @@ const StackingCard = ({ reason, index, rotations }) => {
   return (
     <motion.div
       ref={cardRef}
-      className="sticky top-32 w-full max-w-2xl bg-[#030c22]/60 backdrop-blur-md rounded-3xl p-8 sm:p-12 border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.3)] transition-all duration-700 ease-out flex flex-col sm:flex-row gap-8 items-start hover:scale-[1.01] hover:rotate-0 hover:z-50 group"
+      className="sticky top-32 w-full max-w-2xl bg-[#030c22]/60 backdrop-blur-md rounded-3xl p-8 sm:p-12 border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.3)] transition-all duration-700 ease-out flex flex-col sm:flex-row gap-8 items-start hover:scale-[1.01] hover:rotate-0  group"
       style={{
         transform: `translateY(${index * 4}px)`,
         rotate,

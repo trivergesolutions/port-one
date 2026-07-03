@@ -4,7 +4,10 @@ import Badge from './Badge';
 import { useRef, useState, useEffect } from 'react';
 import project1 from "../assets/project1.png";
 import project3 from "../assets/project3.png";
-import project6 from "../assets/project6.webp";
+import project2 from "../assets/project2.png";
+import project4 from "../assets/project4.png";
+import project5 from "../assets/project5.png";
+import project6 from "../assets/project6.png";
 
 const projects = [
   {
@@ -20,6 +23,7 @@ const projects = [
   {
     name: 'Zitzsum BackOffice System',
     problem: 'Restaurant chain needed centralized dashboard for sales, finance, and invoice management',
+    image: project2, // Placeholder image for demonstration
     solution: 'Developed admin system with React Query for real-time data sync and comprehensive reporting',
     impact: 'Reduced manual reporting time by 80% and improved financial visibility across 12 locations',
     tech: ['React.js', 'React Query', 'ASP.NET Core', 'MySQL'],
@@ -39,6 +43,7 @@ const projects = [
   {
     name: 'Healthcare ERP System',
     problem: 'Hospital needed complaint tracking, inventory management, and role-based access control',
+    image: project4, // Placeholder image for demonstration
     solution: 'Built multi-module ERP with workflow automation and comprehensive reporting dashboard',
     impact: 'Streamlined operations for 50+ departments and reduced complaint resolution time by 60%',
     tech: ['Laravel', 'MySQL', 'Vue.js', 'Redis'],
@@ -48,6 +53,7 @@ const projects = [
   {
     name: 'AI-Powered Quiz Mobile App',
     problem: 'EdTech startup needed engaging mobile quiz app with AI-generated questions',
+    image: project5, // Placeholder image for demonstration
     solution: 'Developed cross-platform app with Firebase backend and intelligent question generation',
     impact: 'Achieved 50K+ downloads with 4.8★ rating on both app stores',
     tech: ['Flutter', 'Firebase', 'AI/ML APIs', 'Push Notifications'],
@@ -108,9 +114,9 @@ const AnimatedProjectRow = ({ project, index }) => {
             alt={`${project.name} preview`}
             className="w-full h-full object-cover rounded-2xl group-hover:scale-[1.03] transition-transform duration-700 ease-out brightness-90 group-hover:brightness-100"
           />
-          <div className="absolute top-4 right-4 p-3 bg-[#0c368d]/80 backdrop-blur-md rounded-xl border border-cyan-500/30 opacity-0 group-hover:opacity-100 transition-all duration-300 shadow-[0_0_15px_rgba(34,211,238,0.2)]">
+          {/* <div className="absolute top-4 right-4 p-3 bg-[#0c368d]/80 backdrop-blur-md rounded-xl border border-cyan-500/30 opacity-0 group-hover:opacity-100 transition-all duration-300 shadow-[0_0_15px_rgba(34,211,238,0.2)]">
             <ExternalLink className="w-5 h-5 text-cyan-400" />
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -125,9 +131,9 @@ const AnimatedProjectRow = ({ project, index }) => {
           <span className="text-[10px] font-bold tracking-widest uppercase bg-cyan-500/20 text-cyan-400 border border-cyan-500/30 px-3 py-1 rounded-md shadow-[0_0_10px_rgba(34,211,238,0.1)]">
             {project.category}
           </span>
-          <span className="text-[10px] font-bold tracking-widest uppercase bg-white/5 text-slate-300 border border-white/10 px-3 py-1 rounded-md">
+          {/* <span className="text-[10px] font-bold tracking-widest uppercase bg-white/5 text-slate-300 border border-white/10 px-3 py-1 rounded-md">
             {project.role}
-          </span>
+          </span> */}
         </div>
 
         {/* Project Identity */}
@@ -191,7 +197,7 @@ export default function Projects() { // Default fallback array
             </span>
           </div>
           <h2 className="text-4xl sm:text-6xl font-black text-white tracking-tight uppercase leading-[0.95]">
-            Featured <br /> Projects
+            Featured Projects
           </h2>
           <div className="w-12 h-[1px] bg-white/30 my-6"></div>
           <p className="text-lg text-blue-100/90 leading-relaxed">

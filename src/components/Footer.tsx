@@ -6,6 +6,7 @@ import {
     Twitter,
     Instagram,
     ArrowUpRight,
+    Facebook,
 } from "lucide-react";
 import logo from "../assets/logo.png";
 
@@ -35,10 +36,10 @@ export default function Footer() {
                             </div>
                             <div>
                                 <div className="font-black text-2xl tracking-tight uppercase text-white">
-                                    TriVerge
+                                    TriVerge Solutions
                                 </div>
                                 <div className="text-[10px] font-bold tracking-widest uppercase text-cyan-400/80 drop-shadow-[0_0_6px_rgba(34,211,238,0.2)]">
-                                    Systems Engineering Collective
+                                    Smart IT Solutions for Modern Businesses
                                 </div>
                             </div>
                         </div>
@@ -48,17 +49,43 @@ export default function Footer() {
                         </p>
 
                         {/* Premium Structural Social Link Buttons */}
-                        <div className="flex gap-2">
-                            <a
-                                href="https://www.linkedin.com/in/aman-mansuri-b78b5b215/"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="group flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-slate-300 bg-white/5 border border-white/10 px-4 py-2.5 rounded-xl hover:bg-white hover:text-[#010614] hover:border-white transition-all duration-300 shadow-sm"
-                            >
-                                <Linkedin className="w-3.5 h-3.5" />
-                                LinkedIn
-                                <ArrowUpRight className="w-3 h-3 text-slate-500 group-hover:text-[#010614] transition-colors" />
-                            </a>
+                        <div className="flex flex-wrap gap-3">
+                            <div className="flex gap-2">
+                                <a
+                                    href="https://www.linkedin.com/company/triverge-solution/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="group flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-slate-300 bg-white/5 border border-white/10 px-4 py-2.5 rounded-xl hover:bg-white hover:text-[#010614] hover:border-white transition-all duration-300 shadow-sm"
+                                >
+                                    <Linkedin className="w-3.5 h-3.5" />
+                                    {/* LinkedIn */}
+                                    {/* <ArrowUpRight className="w-3 h-3 text-slate-500 group-hover:text-[#010614] transition-colors" /> */}
+                                </a>
+                            </div>
+                            <div className="flex gap-2">
+                                <a
+                                    href="https://www.instagram.com/trivergesolutions/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="group flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-slate-300 bg-white/5 border border-white/10 px-4 py-2.5 rounded-xl hover:bg-white hover:text-[#010614] hover:border-white transition-all duration-300 shadow-sm"
+                                >
+                                    <Instagram className="w-3.5 h-3.5" />
+                                    {/* Instagram */}
+                                    {/* <ArrowUpRight className="w-3 h-3 text-slate-500 group-hover:text-[#010614] transition-colors" /> */}
+                                </a>
+                            </div>
+                            <div className="flex gap-2">
+                                <a
+                                    href="https://www.facebook.com/profile.php?id=61591551988061&mibextid=rS40aB7S9Ucbxw6v"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="group flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-slate-300 bg-white/5 border border-white/10 px-4 py-2.5 rounded-xl hover:bg-white hover:text-[#010614] hover:border-white transition-all duration-300 shadow-sm"
+                                >
+                                    <Facebook className="w-3.5 h-3.5" />
+                                    {/* Facebook */}
+                                    {/* <ArrowUpRight className="w-3 h-3 text-slate-500 group-hover:text-[#010614] transition-colors" /> */}
+                                </a>
+                            </div>
                         </div>
                     </div>
 
@@ -102,15 +129,16 @@ export default function Footer() {
                 <div className="pt-8 border-t border-white/5">
                     <div className="flex flex-col md:flex-row justify-between items-center gap-4">
                         <p className="text-slate-500 text-xs tracking-wide text-center md:text-left">
-                            © {currentYear} TriVerge Solutions. Engineered with absolute permanent structural integrity.
+                            © {currentYear} TriVerge Solutions.
+                            {/* Engineered with absolute permanent structural integrity. */}
                         </p>
 
-                        <div className="flex gap-6 text-xs font-semibold tracking-wider uppercase text-slate-500">
+                        {/* <div className="flex gap-6 text-xs font-semibold tracking-wider uppercase text-slate-500">
                             <span className="flex items-center gap-1.5 cursor-default">
                                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse shadow-[0_0_8px_#34d399]"></span>
                                 Node Status: Operational
                             </span>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

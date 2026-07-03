@@ -18,12 +18,12 @@ export default function Hero() {
             <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center flex flex-col items-center">
 
                 {/* Tech Cyber Badge */}
-                <div className="inline-flex items-center gap-2 bg-[#020a1c]/80 border border-cyan-500/30 px-4 py-1.5 rounded-full shadow-[0_0_20px_rgba(6,182,212,0.15)] mb-10 transition-all hover:scale-[1.02] hover:border-cyan-400 duration-300">
+                {/* <div className="inline-flex items-center gap-2 bg-[#020a1c]/80 border border-cyan-500/30 px-4 py-1.5 rounded-full shadow-[0_0_20px_rgba(6,182,212,0.15)] mb-10 transition-all hover:scale-[1.02] hover:border-cyan-400 duration-300">
                     <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse shadow-[0_0_8px_#22d3ee]"></span>
                     <span className="text-xs font-semibold tracking-widest uppercase text-cyan-400/90">
                         Available for Q3 2026 Projects
                     </span>
-                </div>
+                </div> */}
 
                 {/* Sci-Fi Editorial Typography */}
                 <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black text-white mb-8 tracking-tight leading-[0.95] uppercase">

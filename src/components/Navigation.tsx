@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Code2, Calendar, Instagram, Linkedin, Twitter } from 'lucide-react';
+import { Menu, X, Code2, Calendar, Instagram, Linkedin, Twitter, Facebook } from 'lucide-react';
 import Button from './Button';
 import logo from '../assets/logo.png';
 
@@ -117,7 +117,7 @@ export default function Navigation() {
                                 <a
                                     key={link.name}
                                     href={link.href}
-                                    className="text-4xl text-white font-bold uppercase tracking-wider hover:text-cyan-400 active:text-cyan-400 transition-colors"
+                                    className="text-1xl text-white font-bold uppercase tracking-wider hover:text-cyan-400 active:text-cyan-400 transition-colors"
                                     onClick={() => setIsMobileMenuOpen(false)}
                                 >
                                     {link.name}
@@ -129,7 +129,7 @@ export default function Navigation() {
                     {/* MIDDLE LAYER - CARD 2: Contact Info & Social Links */}
                     <div className="relative z-10 bg-[#030c22]/40 rounded-3xl p-8 border border-white/10 shadow-sm mb-3 flex flex-col gap-6 backdrop-blur-md">
                         <div>
-                            <h3 className="text-3xl font-bold text-white tracking-tight">Let's talk</h3>
+                            <h3 className="text-2xl font-bold text-white tracking-tight">Let's talk</h3>
                         </div>
 
                         {/* Email Pill Input Style */}
@@ -155,6 +155,12 @@ export default function Navigation() {
                             >
                                 <Linkedin className="w-5 h-5" />
                             </a>
+                            <a
+                                href="https://www.facebook.com/profile.php?id=61591551988061&mibextid=rS40aB7S9Ucbxw6v"
+                                className="p-3 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl text-slate-300 hover:text-white transition-colors"
+                            >
+                                <Facebook className="w-5 h-5" />
+                            </a>
                         </div>
                     </div>
 
@@ -162,7 +168,7 @@ export default function Navigation() {
                     <a
                         href="#contact"
                         onClick={() => setIsMobileMenuOpen(false)}
-                        className="relative z-10 w-full bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white rounded-3xl p-6 flex items-center justify-between font-medium text-2xl tracking-wide shadow-[0_0_25px_rgba(6,182,212,0.25)] active:scale-[0.99] transition-all group"
+                        className="relative z-10 w-full bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white rounded-3xl p-6 flex items-center justify-between font-medium text-1xl tracking-wide shadow-[0_0_25px_rgba(6,182,212,0.25)] active:scale-[0.99] transition-all group"
                     >
                         <span>Book a call</span>
                         <Calendar className="w-6 h-6 text-cyan-200 group-hover:text-white transition-colors" />
