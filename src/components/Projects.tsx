@@ -8,68 +8,42 @@ import project2 from "../assets/project2.png";
 import project4 from "../assets/project4.png";
 import project5 from "../assets/project5.png";
 import project6 from "../assets/project6.png";
+import project7 from "../assets/project7.png";
+import project8 from "../assets/project8.png";
+import project9 from "../assets/project9.png";
 
 const projects = [
   {
-    name: 'LMS Platform with Live Classes',
-    problem: 'Educational platform needed tutor-student booking system with real-time video classes',
-    solution: 'Built comprehensive LMS with Zoom integration, time-zone handling, and dual-role dashboards',
-    impact: 'Enabled 500+ tutors to schedule and conduct online classes seamlessly across 15+ countries',
-    image: project1, // Placeholder image for demonstration
-    tech: ['React.js', 'ASP.NET Core', 'MySQL', 'Zoom API', 'Stripe'],
+    name: 'School Management CRM',
+    problem: 'K-12 schools struggled with fragmented student data, manual fee collection, and poor parent communication',
+    solution: 'Developed a unified school CRM featuring automated fee invoicing, attendance tracking, and a parent-teacher portal',
+    impact: 'Streamlined administration for 25+ schools, reducing payment delays by 40% and improving parent engagement scores',
+    image: project7,
+    tech: ['React.js', 'Node.js', 'PostgreSQL', 'Firebase', 'Twilio API'],
     role: 'Full Stack',
-    category: 'SaaS Platform'
+    category: 'EdTech CRM'
   },
   {
-    name: 'Zitzsum BackOffice System',
-    problem: 'Restaurant chain needed centralized dashboard for sales, finance, and invoice management',
-    image: project2, // Placeholder image for demonstration
-    solution: 'Developed admin system with React Query for real-time data sync and comprehensive reporting',
-    impact: 'Reduced manual reporting time by 80% and improved financial visibility across 12 locations',
-    tech: ['React.js', 'React Query', 'ASP.NET Core', 'MySQL'],
-    role: 'Frontend Lead',
-    category: 'Enterprise Dashboard'
-  },
-  {
-    name: 'University Quran Learning Platform',
-    problem: 'Islamic education platform required course management with flexible payment options',
-    solution: 'Created LMS with Stripe/Razorpay integration, WhatsApp automation, and tutor scheduling',
-    impact: 'Onboarded 2000+ students with automated enrollment and payment processing',
-    image: project3, // Placeholder image for demonstration
-    tech: ['Laravel', 'React.js', 'Stripe', 'Razorpay', 'WhatsApp API'],
+    name: 'Restaurant Guest & Order CRM',
+    problem: 'A hospitality group lacked centralized guest profiles, leading to inefficient loyalty marketing and table management',
+    solution: 'Built a multi-location CRM integrating POS data, reservation tracking, automated feedback loops, and targeted SMS campaigns',
+    impact: 'Increased repeat table bookings by 35% and captured 50k+ unique guest profiles across 15 restaurant locations',
+    image: project8,
+    tech: ['Vue.js', 'ASP.NET Core', 'MySQL', 'Redis', 'Socket.io'],
     role: 'Full Stack',
-    category: 'EdTech Platform'
+    category: 'Hospitality SaaS'
   },
   {
-    name: 'Healthcare ERP System',
-    problem: 'Hospital needed complaint tracking, inventory management, and role-based access control',
-    image: project4, // Placeholder image for demonstration
-    solution: 'Built multi-module ERP with workflow automation and comprehensive reporting dashboard',
-    impact: 'Streamlined operations for 50+ departments and reduced complaint resolution time by 60%',
-    tech: ['Laravel', 'MySQL', 'Vue.js', 'Redis'],
-    role: 'Backend',
-    category: 'ERP System'
-  },
-  {
-    name: 'AI-Powered Quiz Mobile App',
-    problem: 'EdTech startup needed engaging mobile quiz app with AI-generated questions',
-    image: project5, // Placeholder image for demonstration
-    solution: 'Developed cross-platform app with Firebase backend and intelligent question generation',
-    impact: 'Achieved 50K+ downloads with 4.8★ rating on both app stores',
-    tech: ['Flutter', 'Firebase', 'AI/ML APIs', 'Push Notifications'],
-    role: 'Mobile Developer',
-    category: 'Mobile App'
-  },
-  {
-    name: 'Multi-Vendor Grocery Delivery',
-    problem: 'Local business needed Uber-like grocery delivery with real-time tracking',
-    solution: 'Built native mobile apps with live order tracking, payment gateway, and vendor dashboard',
-    impact: 'Processed 10K+ orders in first 3 months with 95% on-time delivery rate',
-    tech: ['React Native', 'Node.js', 'Google Maps', 'Stripe', 'Socket.io'],
-    image: project6, // Placeholder image for demonstration
+    name: 'Healthcare Patient CRM',
+    problem: 'Medical clinics faced high patient no-show rates and disjointed follow-up workflows after consultations',
+    solution: 'Created a HIPAA-compliant CRM with smart appointment scheduling, automated WhatsApp reminders, and medical history timelines',
+    impact: 'Reduced appointment no-shows by 65% and optimized outpatient workflows for over 120 healthcare providers',
+    image: project9,
+    tech: ['Laravel', 'React.js', 'MySQL', 'AWS', 'WhatsApp Business API'],
     role: 'Full Stack',
-    category: 'eCommerce'
+    category: 'Healthcare IT'
   }
+
 ];
 
 
